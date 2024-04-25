@@ -12,7 +12,7 @@ const Register = () => {
         event.preventDefault();
         
         try {
-            const response = await axios.post('http://localhost:3001/register', { email, password });
+            const response = await axios.post('https://f-1v2i.onrender.com/register', { email, password });
             if (response.data === 'Already registered') {
                 alert('E-mail already registered for reward! .');
                 navigate('/login');
